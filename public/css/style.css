@@ -11,7 +11,7 @@
     --paragraph: 12px;
     --title: 24px;
     --prices: 18px;
-    --discounts-descriptions: 16px;
+    --discounts-descriptions: 1rem;
 
 }
 
@@ -34,15 +34,15 @@ a{
     padding-right:5px ;
 }
 h5{
-    font-size: 16px;
+    font-size: 1rem;
 }
 body{
     font-family: var(--font-roboto);
+    background-color: var(--color-grisClaro);
 }
 li{
     list-style: none;
 }
-body {background-color: var(--color-grisClaro);}
 /* +++++++++++++++++++++++++++ */
 /* FIN ESTILOS GENERALES */
 /* +++++++++++++++++++++++++++ */
@@ -50,144 +50,92 @@ body {background-color: var(--color-grisClaro);}
 /* +++++++++++++++++++++++++++ */
 /* HEADER */
 /* +++++++++++++++++++++++++++ */
-
 header{
-    background-color: var(--color-amarillo );
-    /* padding-bottom: 0px; */ 
-    padding-top: 30px;
+    background-color: var(--color-amarillo);
 }
- 
-header img#logo{
+
+#logo{
     width: 130px;
-    margin-left: 25px;
+    padding: 15px 165px 10px  8vw;
+    
+}
+
+
+
+header div{
+    display: flex;
+    align-items: center;
+}
+
+header div input{
+    margin-left:5vw;
+    text-align:center;
 }
 
 #lupa{
     background-color: white;
-    border: black;
-    margin-left: 2px;
-    border-radius: 1px;
+    margin-left: 1.5vw;
+    padding:1px;
+    border: solid 1px black;
+    border-radius: 2px;
 }
-
-#hand{
-    color: black;
-}
-
-.burger-menu{
-    
-    border-radius: 5px;
-    color: white;
-    width: 17px;
-    font-size: 17px;
-    text-align: center; 
-    padding: 7px;
-    margin: 10px auto 0;
-}
-
-.barra{
+header p{
+    font-size: 0.75rem;
     display: flex;
-    justify-content: center; 
-} 
+    justify-content: center;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+}
 
-.barra div{
+nav{
+    display: none;
+}
+#burger-menu{
+    display: flex;
+    justify-content: center;
+}
+.fas{
     background-color: var(--color-celeste);
-     color:white;
-     padding: 7px;
-     width: 17px;
-     font-size: 17px;
-     text-align: center; 
-     border-radius:5px;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top:5px;
+    margin-bottom: 1rem;
 }
 
 #banner{
+    
     display: flex;
-    justify-content: center;
-    padding-bottom: 0px;
-    margin-top: 10px;
-
+    align-items: flex-end;
 }
+img{
+    width: 100%;
+}
+
+
+/* +++++++++++++++++++++++++++ */
+/* FIN HEADER */
+/* +++++++++++++++++++++++++++ */
 
 main{
+    width: 90vw;
     display: flex;
     justify-content: center;
-    margin: 10px 10%;
     flex-direction: column;
+    align-items: center;
 }
 
-.basado{
-    
-    margin: 10px auto;
-}
 
-article .basado{
-    justify-content: space-evenly;
-}
+ 
 
-#cafetera{
-    background-color: white;
-    margin: 10% 10px 10%;
-}
 
-#smart{
-    background-color: white;
-    margin-bottom:10px;
-}
 
-#mac{
-    background-color: white;
-    margin:10px;
-}
-#samsung{
-    background-color: white;
-    margin:10px;
-}
-.titulos{
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: var(--color-grisOscuro);
-}
 
-img{
-    width: 100%;    
-}
 
-.desc{
-    color: var(--colorverde);
-}
-
-#truck{
-    color: var(--colorverde);
-    border:1px solid #39b54a;
-    border-radius:100px ;
-    
-}
-
-.imgs{
-border-bottom:1.5px solid #ebebeb;
-    
-}
-.footer-icons{
+footer article{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
 }
-
-/* p, h5{
-    display: flex;
-    justify-content: center;
-}
-.gift{
-    display: flex;
-    justify-content: center;
-} */
-/* .precios{
-    font-size: 18px;
-}
-.desc{
-    font-size: 16px;
-}
-
-h4{
-    font-size: 24px;
-} */
